@@ -1,0 +1,270 @@
+:root {
+    --text-color: rgba(0, 0, 0, 0.565);
+}
+
+html{
+    background-image: linear-gradient(45deg, rgb(0, 106, 255), rgb(136, 0, 255), rgb(245, 10, 178), rgb(255, 119, 74));
+}
+
+body{
+    font-family: 'Roboto' ,sans-serif;
+    margin: 0px 0px;
+    background-color: rgba(10, 10, 10, 0.333);
+    color: #ffffff;
+}
+
+hr {
+    color: hsla(0, 0%, 60%, 0.598);
+    border-style: dotted none none none;
+    border-width: 0.4em;
+    width: 3%;
+}
+
+/*-------Nav Bar-------*/
+
+/* #ship {
+    display:flex;
+    overflow-y:visible;
+    overflow-x: auto;
+    justify-content: space-between;
+    background: rgb(26, 26, 26);
+    border-radius: 0.3em;
+    margin: 0% 0%;
+    width: 100%;
+    top:0px;
+    position: sticky;
+    z-index: 0;
+} */
+
+
+
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    justify-content:right;
+    align-items: center;
+    overflow:visible;
+    margin-right: 1em;
+    background-color: var(--text-color);
+}
+
+.icon{
+    
+}
+
+a:link {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: 0s;
+    border-radius: 0.2em;
+}
+
+.nav > a:link {
+    text-decoration:none;
+    transition: 1s;
+}
+
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+    border-radius: 0.2em;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+nav>a:hover {
+    background-color: #fff;
+    transition: all 0.4s;
+}
+
+a:active {
+    background-color: ;
+    color: #ff5900;
+    text-decoration: none;
+    transform: translateY(-0.3em) ;
+    transition-duration: 0.3s ;
+}
+.nav{
+    display: flex;
+    margin:0 2em
+    
+}
+
+
+.nav * {
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    background-color: var(--text-color);
+    padding:0px 20px;
+    min-height: 2em;
+    width: auto;
+}
+
+.navlink{
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    transition: background-color 2s;
+    text-decoration: none;
+}
+
+.navlink:active {
+    text-decoration: none;
+    transition: 0.3s;
+}
+.more{
+    transform: translateY(-2em) 1s;
+    display: block;
+    width: 100%;
+}
+.navbox:hover .more{
+    visibility:visible
+    
+}
+
+#pp {
+    background-color: black;
+    cursor:pointer;
+    align-items: flex-start;
+    width: 3em;
+    height: 3em;
+    margin: 4px 1em 0px 1em;
+    border-style: solid;
+    border-color: rgba(255, 0, 255, 0.604);
+    border-radius: 20%;
+    transition: 0.5s;
+    justify-content:left;
+}
+#pp:hover{
+    background-color: black;
+}
+
+
+/*----------intro---------*/
+
+.card-0 {
+    background-color:var(--text-color);
+    margin: 1.5em 2em ;
+    padding: 2em;
+    display: flex;
+    flex-wrap:wrap;
+    word-wrap: normal;
+    overflow-x: auto;
+    overflow-y: auto;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 0.3em;
+    justify-content: center;
+
+}
+.card-1 {
+    background-color: var(--text-color);
+    margin: 1.5em 2em;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: normal;
+    overflow-x: auto;
+    overflow-y: auto;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 0.3em;
+    justify-content: center;
+}
+
+.hearder_1{ 
+    overflow-x:hidden;
+}
+
+.qaushain_pic {
+    width: clamp(2em,50%,8.6em);
+    border-style: none;
+    border-radius: 2em;
+    transition: 1s;
+    color: rgba(0, 0, 0, 0.463);
+    box-shadow: -0.5em 0.5em 0.4em ;
+}
+
+.name{
+    margin: 0px 2em 0px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+    color: #d400ff;
+    overflow-x: visible;
+}
+
+.btn{
+    all: unset;
+    background: rgba(51, 51, 51, 0.664);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    margin-left: 1em;
+    border: .2em solid #d400ff;
+    border-radius: 0.2em;
+    transition: all 0.2s;
+    align-self: center;
+}
+
+.btn:hover {
+    cursor:pointer;
+    background-color:#f6cdff ;
+    color:#d400ff;
+    padding-right: 2em;
+    transform: translateY(-5px);
+    transition:  0.4s 0.1s;
+    box-shadow: -0.2em 0.2em 0.8em;
+}
+
+.something{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition:1s;
+    margin:0em 2em;
+    padding: 2em 2em;
+    border-radius: 1em;
+    
+}
+
+.link:hover{
+    padding: 0 24px 0 0;
+}
+
+/* * * * * * * * *   Bottom   * * * * * * * */
+
+.bottom{
+    margin:4em 4em 0em;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.3em;
+    background-color: rgb(0, 0, 0) ;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    overflow-x: auto;
+
+}
+.inside_bottom{
+    margin: 0 4em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.divider{
+    border-left: #d400ff;
+    border-style: none none none solid ;
+    max-height: fit-content;
+    width: 0.3em;
+}
