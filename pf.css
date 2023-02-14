@@ -49,9 +49,6 @@ hr {
     background-color: var(--text-color);
 }
 
-.icon{
-    
-}
 
 a:link {
     color: #ffffff;
@@ -62,7 +59,7 @@ a:link {
 
 .nav > a:link {
     text-decoration:none;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 a:visited {
@@ -101,9 +98,8 @@ a:active {
     border-width: 3px;
     border-color: black; 
     background-color: var(--text-color);
-    padding:0px 20px;
+    padding:0 20px;
     min-height: 2em;
-    width: auto;
 }
 
 .navlink{
@@ -120,9 +116,9 @@ a:active {
     transition: 0.3s;
 }
 .more{
-    transform: translateY(-2em) 1s;
+    transform: translateY(-2em) 0.5s;
     display: block;
-    width: 100%;
+    width::fit-content;
 }
 .navbox:hover .more{
     visibility:visible
@@ -186,13 +182,14 @@ a:active {
 }
 
 .qaushain_pic {
-    width: clamp(2em,50%,8.6em);
+    width: clamp(2em,55%,8.6em);
     border-style: none;
     border-radius: 2em;
     transition: 1s;
     color: rgba(0, 0, 0, 0.463);
     box-shadow: -0.5em 0.5em 0.4em ;
 }
+
 
 .name{
     margin: 0px 2em 0px 0px;
@@ -243,7 +240,7 @@ a:active {
 /* * * * * * * * *   Bottom   * * * * * * * */
 
 .bottom{
-    margin:4em 4em 0em;
+    margin:2em 4em 0em;
     border-style: solid;
     border-color: black;
     border-radius: 0.3em;
@@ -253,18 +250,31 @@ a:active {
     justify-content: space-between;
     align-content: center;
     overflow-x: auto;
-
 }
 .inside_bottom{
-    margin: 0 4em 2em;
+    width: 100%;
+    margin: 0 0 2em 4em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
 }
-.divider{
-    border-left: #d400ff;
-    border-style: none none none solid ;
-    max-height: fit-content;
-    width: 0.3em;
+.inside_bottom > H2{
+    margin: 1.5em 0 0 0.5em;
+    text-align:justify;
+}
+.inside_buttom {
+    width:100%;
+    margin: 0  4em 2em 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.inside_buttom > H2{
+    text-align: justify;
+    margin: 1.5em 0 0 0.5em;
+}
+
+/* * * * * reflection * * * * */
+
+.qaushain_pic::after {
+    
 }
