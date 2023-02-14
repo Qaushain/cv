@@ -1,0 +1,160 @@
+:root {
+    --text-color: rgba(0, 0, 0, 0.565);
+}
+
+html {
+    background-image: linear-gradient(45deg, rgb(0, 106, 255), rgb(136, 0, 255), rgb(245, 10, 178), rgb(255, 119, 74));
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px;
+    background-color: rgba(10, 10, 10, 0.333);
+    color: #ffffff;
+}
+
+hr {
+    color: hsla(0, 0%, 60%, 0.598);
+    border-style: dotted none none none;
+    border-width: 0.4em;
+    width: 3%;
+}
+
+/*-------Nav Bar-------*/
+
+/* #ship {
+    display:flex;
+    overflow-y:visible;
+    overflow-x: auto;
+    justify-content: space-between;
+    background: rgb(26, 26, 26);
+    border-radius: 0.3em;
+    margin: 0% 0%;
+    width: 100%;
+    top:0px;
+    position: sticky;
+    z-index: 0;
+} */
+
+
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    justify-content: right;
+    align-items: center;
+    overflow: visible;
+    margin-right: 1em;
+    background-color: var(--text-color);
+}
+
+.nav {
+    display: flex;
+    margin: 0 2em
+}
+
+
+.navlink {
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    transition: background-color 2s;
+    text-decoration: none;
+}
+.nav * {
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    background-color: var(--text-color);
+    padding: 0 20px;
+    min-height: 2em;
+}
+
+
+a:link {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: 0s;
+    border-radius: 0.2em;
+}
+
+.nav>a:link {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+    border-radius: 0.2em;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+nav>a:hover {
+    background-color: #fff;
+    transition: all 0.4s;
+}
+
+a:active {
+    color: #ff5900;
+    text-decoration: none;
+    transform: translateY(-0.2em);
+    transition-duration: 0.3s;
+}
+
+nav > * a {
+    all: unset;
+}
+
+.navlink:active {
+    all: unset;
+    color: #ff5900;
+        text-decoration: none;
+        transform: translateY(-0.2em);
+        transition-duration: 0.3s;
+    border-style: solid;
+        border-width: 3px;
+        border-color: black;
+        background-color: rgb(195, 195, 195);
+        padding: 0 20px;
+        min-height: 2em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.more {
+    transform: translateY(-2em) 0.5s;
+    display: block;
+    width: fit-content;
+}
+
+.navbox:hover .more {
+    visibility: visible
+    
+}
+
+#pp {
+    background-color: black;
+    cursor: pointer;
+    align-items: flex-start;
+    width: 3em;
+    height: 3em;
+    margin: 4px 1em 0px 1em;
+    border-style: solid;
+    border-color: rgba(255, 0, 255, 0.604);
+    border-radius: 20%;
+    transition: 0.5s;
+    justify-content: left;
+}
+
+#pp:hover {
+    background-color: black;
+}
